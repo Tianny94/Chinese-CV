@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚甜 - 简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            font-size: 16px;
+        }
+        
+        /* 左侧信息区 */
+        .info-column {
+            width: 280px;
+            padding: 50px 35px;
+            background-color: #f8f8f8;
+            border-right: 1px solid #e0e0e0;
+        }
+        
+        /* 姓名标题 */
+        .name-title {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+        
+        .info-section {
+            margin-bottom: 30px;
+        }
+        
+        .info-section h3 {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #555;
+        }
+        
+        .info-section p,
+        .info-section a {
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            line-height: 1.7;
+            margin-bottom: 3px;
+            display: block;
+        }
+        
+        .info-section a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .info-section a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 主内容区 */
+        .main-content {
+            flex: 1;
+            padding: 50px 45px;
+            background-color: #fff;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #222;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        
+        .experience-item,
+        .education-item {
+            margin-bottom: 22px;
+        }
+        
+        .job-title,
+        .degree-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            color: #222;
+        }
+        
+        .job-meta,
+        .education-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .job-description {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .job-description p {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .job-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-description li {
+            margin-bottom: 4px;
+            line-height: 1.6;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .job-description li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+        
+        /* 简洁段落样式 */
+        .clean-paragraph {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 6px;
+        }
+        
+        .publication-item,
+        .award-item,
+        .service-item {
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .publication-item strong {
+            font-weight: 600;
+        }
+        
+        /* 交换经历 */
+        .exchange-programs {
+            font-size: 14px;
+            color: #666;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .exchange-programs strong {
+            color: #333;
+        }
+        
+        /* 技能部分 */
+        .skills-list {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        /* 服务项目的bullet points */
+        .service-item ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 5px;
+        }
+        
+        .service-item li {
+            margin-bottom: 3px;
+            line-height: 1.6;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .service-item li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                max-width: none;
+                font-size: 11pt;
+            }
+            .info-column {
+                page-break-after: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .info-column {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            .main-content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="info-column">
+        <h1 class="name-title">姚甜</h1>
+        
+        <div class="info-section">
+            <h3>作品集</h3>
+            <a href="https://tyaobbe9.myportfolio.com" target="_blank">tyaobbe9.myportfolio.com</a>
+        </div>
+        
+        <div class="info-section">
+            <h3>联系方式</h3>
+            <p>+1(319) 412-9322</p>
+            <p>+86 189-7571-3800</p>
+            <a href="mailto:tyao@iastate.edu">tyao@iastate.edu</a>
+        </div>
+        
+        <div class="info-section">
+            <h3>研究兴趣</h3>
+            <p>人机交互（HCI）</p>
+            <p>人因工程</p>
+            <p>包容性与社区导向设计</p>
+            <p>用户体验与界面设计</p>
+        </div>
+        
+        <div class="info-section">
+            <h3>专业会员</h3>
+            <p>美国人因工程与工效学学会（HFES）</p>
+            <p>美国东南部大学艺术协会（SECAC）</p>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="section">
+            <h2 class="section-title">教育背景</h2>
+            
+            <div class="education-item">
+                <div class="degree-title">人机交互学博士</div>
+                <div class="education-meta">2021年8月 - 2026年8月(预计) | 爱荷华州立大学，艾姆斯，爱荷华州，美国</div>
+                <div class="clean-paragraph">GPA: 3.95/4.0</div>
+                <div class="clean-paragraph">导师：Michael Dorneich 教授</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="degree-title">平面设计硕士</div>
+                <div class="education-meta">2024年8月 - 2026年5月(预计) | 爱荷华州立大学，艾姆斯，爱荷华州，美国</div>
+                <div class="clean-paragraph">导师：Tina Rice 教授</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="degree-title">工业设计硕士</div>
+                <div class="education-meta">2017年9月 - 2020年6月 | 华南理工大学，广州，中国</div>
+                <div class="clean-paragraph">导师：熊巍教授</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="degree-title">食品质量与安全学士</div>
+                <div class="education-meta">2013年9月 - 2017年6月 | 青岛农业大学，青岛，中国</div>
+            </div>
+            
+            <div class="exchange-programs">
+                <strong>交换经历：</strong><br>
+                美国匹兹堡州立大学，平面设计，2018年8月–2018年11月<br>
+                韩国建国大学，食品科学，2015年8月–2015年11月
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">研究经历</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">研究生研究助理</div>
+                <div class="job-meta">2023年1月 - 至今 | 人机交互系，爱荷华州立大学</div>
+                <div class="job-description">
+                    <p>美国国家科学基金会 (NSF) 资助项目：CommHEAT室内高温预警系统</p>
+                    <ul>
+                        <li>主导CommHEAT移动端热预警系统的UX/UI设计</li>
+                        <li>使用问卷、访谈、可用性测试开展用户研究</li>
+                        <li>应用包容性设计原则确保弱势群体可访问性</li>
+                        <li>与工程、建筑、心理学跨学科团队协作</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">工作经历</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">平面设计师</div>
+                <div class="job-meta">2022年8月 - 2022年12月 | 爱荷华州立大学平面设计系</div>
+                <div class="job-description">
+                    <ul>
+                        <li>协助设计社交媒体素材</li>
+                        <li>设计杂志、信息板与其他宣传材料</li>
+                        <li>进行摄影与修图</li>
+                        <li>遵循并维护品牌视觉规范</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">平面设计实习生</div>
+                <div class="job-meta">2022年8月 - 2022年11月 | 爱荷华州立大学校友会</div>
+                <div class="job-description">
+                    <ul>
+                        <li>创建网站、活动、宣传等多种视觉素材</li>
+                        <li>严格遵守品牌指南并按时完成项目</li>
+                        <li>图像处理与创意执行</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">UX/UI 设计师</div>
+                <div class="job-meta">2020年6月 - 2021年6月 | 酷开网络科技有限公司（Coocaa），深圳</div>
+                <div class="job-description">
+                    <ul>
+                        <li>设计Coocaa海外电视系统UI（天气、屏保、主界面更新等）</li>
+                        <li>为共享屏App设计多个小程序UI（奶酪视频、云盘、商城等）</li>
+                        <li>设计TV系统logo与图标</li>
+                        <li>撰写竞品分析与用户体验报告</li>
+                        <li>与设计公司合作确保设计质量</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">游戏用户体验设计实习生</div>
+                <div class="job-meta">2019年4月 - 2019年7月 | 网易游戏，广州</div>
+                <div class="job-description">
+                    <ul>
+                        <li>负责阴阳师衍生游戏UX设计（成就、战斗、故事编辑器、卡牌系统等）</li>
+                        <li>使用Unity 3D开发UI</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">UX/UI 设计师</div>
+                <div class="job-meta">2017年9月 - 2018年2月 | 音书科技有限公司，广州</div>
+                <div class="job-description">
+                    <ul>
+                        <li>设计音书APP的UX/UI（语音识别、视频通话、VIP模块等）</li>
+                        <li>调研与设计语音训练APP</li>
+                        <li>制作市场推广物料（海报、社交媒体图片等）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">教学经历</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">课程讲师</div>
+                <div class="job-meta">2025年1月 - 2025年6月 | 爱荷华州立大学</div>
+                <div class="job-description">
+                    <p>课程：数字时代的视觉叙事</p>
+                    <ul>
+                        <li>独立设计并教授课程，将视觉传播与数字叙事结合</li>
+                        <li>采用互动式讲座、案例研究与课堂活动</li>
+                        <li>鼓励学生开展将视觉叙事与数字媒介结合的创意项目</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">项目导师（SPIRE-EIT Program）</div>
+                <div class="job-meta">2024年6月 - 2024年8月 | 虚拟现实应用中心（VRAC），爱荷华州立大学</div>
+                <div class="job-description">
+                    <ul>
+                        <li>指导3名本科生学习以用户为中心的设计方法与研究流程</li>
+                        <li>监控学生每周进度并指导跨学科项目</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">课程助教（平面设计系）</div>
+                <div class="job-meta">2021年9月 - 2022年6月 | 爱荷华州立大学</div>
+                <div class="job-description">
+                    <ul>
+                        <li>协助规划本科生毕业展（2022）</li>
+                        <li>使用InDesign设计毕业作品集；用SquareSpace搭建展览网站</li>
+                        <li>协助准备课程材料与幻灯片</li>
+                        <li>在导师出差期间代课教学</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Upward Bound 生活导师（RA）</div>
+                <div class="job-meta">2022年6月 - 2022年8月 | 爱荷华州立大学</div>
+                <div class="job-description">
+                    <ul>
+                        <li>为30名高中生教授生活技能课程</li>
+                        <li>独立管理10名高中学生的生活和学习</li>
+                        <li>担任项目摄影并制作最终视频</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">论文发表</h2>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Dorneich, M. C., Thomas, R., Brito Diaz, A., Maduwuba, C., Schwab, N., Losch, M., Krejci, C. C., Caron, J., & Passe, U. (2025). Evaluating User Perceptions and Usability of CommHEAT: A Community-Based Heat Alert Application. <em>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</em>, 0(0). https://doi.org/10.1177/10711813251359996
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Dorneich, M. C., Passe, U., Schwab, N., Losch, M., Krejci, C. C., & Caron, J. (2024). Vulnerable Communities in the Face of Heat: A Pilot Study on Perceptions, Behaviors, and Support Networks During Heat Events. <em>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</em>, 68(1), 1890-1895. https://doi.org/10.1177/10711813241261378
+            </div>
+            
+            <div class="publication-item">
+                Xiong, W., <strong>Yao, T.</strong>, Pan, Q., & Liu, Z. (2020). Usability heuristic evaluation for the hearing impaired language training mobile app. In <em>Design, User Experience, and Usability. Interaction Design: 9th International Conference, DUXU 2020, Held as Part of the 22nd HCI International Conference, HCII 2020</em>, Copenhagen, Denmark, July 19–24, 2020, Proceedings, Part I 22 (pp. 294-307). Springer International Publishing. https://doi.org/10.1007/978-3-030-49713-2_21
+            </div>
+            
+            <p style="margin-top: 20px; font-weight: 600;">教学材料发表：</p>
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2024). Bridging community history through interactive media. In <em>Chicago Designs: Teaching Community-Based Histories</em>. Art Design Chicago & Terra Foundation for American Art. Available online: https://www.designchicago.org/chicago-designs-participants-1?rq=tian%20yao
+            </div>
+            
+            <p style="margin-top: 20px; font-weight: 600;">正在撰写的论文：</p>
+            <div class="publication-item">
+                Wilhelmi, O. V., Hayden, M. H., Howe, P., Vanos, J., Meerow, S., Habeeb, D., He, C., Passe, U., <strong>Yao, T.</strong>, Leal, R., Kumar, R., Crawford, B., Lanza, K., Molla, A., Newman, A., Laverty, A., Iradukunda, J. C., Frank, C., & Visintainer, T. (under review). Human and geographic dimensions of heat risk: Progress, challenges, and opportunities. Manuscript submitted for publication in <em>Environmental Research Letters</em>. (SCIE, JCR Q1, IF 5.6)
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Dorneich, M. C., Passe, U., Schwab, N., & Krejci, C. (in progress). Linking attitudes, norms, and control to heat adaptation: A real-time behavioral perspective. Manuscript in preparation. (Planned submission to <em>Urban Climate</em>, SCIE, JCR Q1, IF 6.9)
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Dorneich, M. C., & Passe, U. (in progress). Designing climate awareness with youth: A co-design jam on heat and health. Manuscript in preparation. (Planned submission to <em>Environmental Education Research</em>, SSCI, JCR Q1, IF 3.1)
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Dorneich, M. C., & Passe, U. (in progress). Designing a community-based indoor heat alert app informed by behavioral theory. Manuscript in preparation. (Planned submission to <em>Design Studies</em>, SCIE, JCR Q1, IF 4.8)
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Dorneich, M. C., & Passe, U. (in progress). Evaluating behavioral change through a theory-informed heat alert system. Manuscript in preparation. (Planned submission to <em>Journal of Environmental Psychology</em>, SSCI, JCR Q1, IF 7)
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">会议演讲和摘要发表</h2>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong>, Passe, U., & Dorneich, M. (2025, June 23–24). A community-based mobile application for indoor heat risk mitigation [Conference presentation]. NSF NCAR Extreme Heat Research Symposium on Human and Geographic Dimensions of Extreme Heat and Heat Risk, Boulder, CO, United States.
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2025, October). Designing for vulnerable populations: A journey from hearing loss training to heat alert systems [Conference abstract]. SECAC (formerly the Southeastern College Art Conference), Cincinnati, OH, United States.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">艺术展览</h2>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2024, October). <em>Tethered Hearts</em>. In Bloom Student Exhibition, Mainframe Studios, Des Moines, IA.
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2024, October). <em>Tulip</em>. In Bloom Student Exhibition, Mainframe Studios, Des Moines, IA.
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2024, August). <em>Warmth Amidst the Cold</em>. Contemporary Lens Student Photography Exhibition, Mainframe Studios, Des Moines, IA.
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2024, June). <em>Spectrum of Harmony</em>. In Effervescence: Perspectives from the ISU LGBTQIA+ student community and allies, Mainframe Studios, Des Moines, IA.
+            </div>
+            
+            <div class="publication-item">
+                <strong>Yao, T.</strong> (2022, October–November). <em>Blooming</em>. Studies in Creativity Exhibition, ISU Memorial Union, Ames, IA.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">媒体报导（研究项目）</h2>
+            
+            <div class="publication-item">
+                <strong>ISU News Release</strong> (Oct 23, 2025)<br>
+                https://www.news.iastate.edu/news/researchers-pilot-potentially-life-saving-heat-alert-app
+            </div>
+            
+            <div class="publication-item">
+                <strong>The Gazette</strong> (Nov 2, 2025)<br>
+                https://www.thegazette.com/environment-nature/as-heat-waves-intensify-in-iowa-a-mobile-app-aims-to-prevent-heat-related-illnesses/
+            </div>
+            
+            <div class="publication-item">
+                <strong>Iowa Capitol Dispatch</strong> (Nov 3, 2025)<br>
+                https://iowacapitaldispatch.com/2025/11/03/iowa-state-university-researchers-develop-app-to-predict-indoor-heat-waves/
+            </div>
+            
+            <div class="publication-item">
+                <strong>Iowa Public Radio River to River</strong> (Nov 12, 2025)<br>
+                https://www.iowapublicradio.org/podcast/river-to-river/2025-11-12/rural-areas-struggle-to-attract-maintain-lawyers (at the 32 minute mark)
+            </div>
+            
+            <div class="publication-item">
+                <strong>Axios</strong> (Nov 13, 2025)<br>
+                https://www.axios.com/local/des-moines/2025/11/13/new-app-alerts-homeowners-to-rising-indoor-heat
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">服务与领导力</h2>
+            
+            <div class="service-item">
+                <strong>美国人因工程与工效学学会学生分会，宣传部长</strong> (2025年8月 – 至今)
+                <ul>
+                    <li>负责制作与维护传播内容（新闻简报、网站等）</li>
+                    <li>维护LinkedIn等社交平台的活跃度</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <strong>爱荷华州立大学自适应认知系统实验室网站管理员</strong> (2023年8月 – 2025年8月)
+                <ul>
+                    <li>管理实验室网站</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <strong>爱荷华州立大学国际学生办公室ISSO文化大使</strong> (2023)
+                <ul>
+                    <li>在校园活动中进行文化宣传与介绍</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <strong>华南理工大学设计学院学生会宣传部部长</strong> (2017–2020)
+                <ul>
+                    <li>宣传5场学术讲座活动</li>
+                    <li>组织学生活动（运动会、迎新会等）</li>
+                    <li>设计讲座海报等宣传物料</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <strong>青岛农业大学志愿者协会宣传部部长</strong> (2014–2017)
+                <ul>
+                    <li>组织志愿者招募</li>
+                    <li>设计协会使用的logo、海报、吉祥物等</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">奖项与荣誉</h2>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2025</p>
+            <div class="award-item">
+                • 美国国家大气研究中心（NCAR）极端热风险研讨会：差旅奖（USD 1,000）<br>
+                • 美国国家大气研究中心（NCAR）GIS故事化叙事工作坊：差旅奖（USD 600）<br>
+                • 爱荷华州立大学人机交互系差旅奖（USD 500）<br>
+                • 爱荷华州立大学平面设计系差旅奖（USD 400）
+            </div>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2024</p>
+            <div class="award-item">
+                • 芝加哥设计工作坊：差旅奖（USD 1,200）<br>
+                • 爱荷华州立大学荣誉研讨课程专业发展奖（USD 500）<br>
+                • 爱荷华州立大学人机交互系差旅奖（USD 500）<br>
+                • 爱荷华州立大学人机交互系20周年海报比赛：最佳跨学科合作奖 & 人气奖（USD 200）
+            </div>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2018</p>
+            <div class="award-item">
+                • "创青春"浙大双创杯全国大学生创业大赛：公益创业金奖<br>
+                • "挑战杯·创青春"广东大学生创业大赛：金奖<br>
+                • 华南理工大学第十届"挑战杯·创青春"创业大赛：金奖
+            </div>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2017</p>
+            <div class="award-item">
+                • 广州大学城创新创业大赛：三等奖<br>
+                • "中石化"新加油站服务体验设计大赛：一等奖
+            </div>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2015</p>
+            <div class="award-item">
+                • 全国大学生英语竞赛C类：二等奖<br>
+                • 青岛（高新区）国际马拉松赛：优秀志愿者
+            </div>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2014</p>
+            <div class="award-item">
+                • 青岛世界园艺博览会：优秀志愿者
+            </div>
+            
+            <p style="font-weight: 600; margin-bottom: 10px;">2013–2018</p>
+            <div class="award-item">
+                • 华南理工大学一、二等奖学金
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">技能</h2>
+            <div class="skills-list">
+                UX/UI设计 | 线框图设计 | 快速原型设计 | 响应式网页设计 | 可用性测试 | 用户访谈
+            </div>
+        </div>
+    </div>
+</body>
+</html>
